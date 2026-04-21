@@ -153,6 +153,33 @@ main {
   margin-top: 0.7rem;
 }
 
+/* Article page image sizing */
+.story-header-image {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.story-inline-image {
+  width: 100%;
+}
+
+.story-inline-image img {
+  width: 100%;
+  height: clamp(260px, 31vw, 360px);
+  min-height: 0;
+  object-fit: cover;
+}
+
+.related-story-card img {
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
 .site-footer {
   background: #111827;
   color: #cbd5e1;

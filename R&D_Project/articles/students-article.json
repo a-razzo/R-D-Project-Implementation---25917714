@@ -1,53 +1,51 @@
 {
-	"title": "Tech Hub Careers June 12th: Where Students Get Hired",
-	"hero": {
-		"kicker": "Mon 20 Apr 2026 09.14 BST",
-		"image": {
-			"src": "images/tech-careers-1.svg",
-			"alt": "Promotional graphic for Tech Hub Careers Live"
-		}
-	},
-	"summary": {
-		"heading": "The Summary",
-		"headers": [
-			"Date",
-			"Attendees",
-			"Opportunities",
-			"Audience"
-		],
-		"rows": [
-			[
-				"12 June 2026 at the Tech Hub Innovation Hall.",
-				"Google, Microsoft, ARM, IBM, and other engineering-led employers.",
-				"Summer placements, graduate software engineer routes, and year-in-industry pipelines.",
-				"Computer Science, Cyber Security, and Data Science students."
-			]
-		]
-	},
-	"abstract": "Tech Hub Careers Live connects Edge Hill students with major employers, graduate opportunities, and practical advice on portfolios, interviews, and technical assessments.",
-	"intro": "The event is being positioned as more than a recruitment fair. Organisers want it to act as a practical bridge between <span class=\"highlighted-text\">university study</span> and <span class=\"highlighted-text\">graduate hiring</span>, with live advice on the portfolios, technical tasks, and communication skills employers now expect.",
-	"sections": [
-		{
-			"reverse": false,
-			"image": {
-				"src": "images/tech-careers-2.svg",
-				"alt": "Tech Hub Careers Live graphic highlighting employers and student opportunities"
-			},
-			"paragraphs": [
-				"<span class=\"highlighted-text\">Google</span> will attend alongside employers recruiting for <span class=\"highlighted-text\">summer placements</span>, graduate software roles, and pathways in cloud, AI, cyber defence, and full-stack development. Students can expect direct advice on <span class=\"highlighted-text\">interview preparation</span>, portfolio quality, and technical assessments.",
-				"Recruitment staff will also explain how applicants can stand out through <span class=\"highlighted-text\">personal projects</span>, <span class=\"highlighted-text\">GitHub activity</span>, hackathon work, and evidence of collaboration. For students unsure where they fit, those conversations may be the most valuable part of the day."
-			]
-		},
-		{
-			"reverse": true,
-			"image": {
-				"src": "images/tech-careers-3.svg",
-				"alt": "Tech Hub Careers Live promotional slide about placements and graduate roles"
-			},
-			"paragraphs": [
-				"Organisers say the goal is to turn <span class=\"highlighted-text\">networking</span> into real career progression. By the end of the day, students should leave with <span class=\"highlighted-text\">clear next steps</span>, employer contacts, and a stronger sense of how to position themselves in the current market.",
-				"Short speaker sessions will cover <span class=\"highlighted-text\">graduate pathways</span>, placement expectations, and how technical talent is assessed in live hiring cycles. For many students, that clarity and confidence may be what makes the event one of the most useful employability dates in the calendar."
-			]
-		}
-	]
+  "title": "Edge Hill Student Takes on DC AI Final",
+  "hero": {
+    "kicker": "Wed 22 Apr 2026 13.47 BST",
+    "image": {
+      "src": "images/historic3.png",
+      "alt": "Daniel reviewing his project notebooks before leaving for Washington DC"
+    }
+  },
+  "summary": {
+    "heading": "The Summary",
+    "headers": [
+      "Student",
+      "Destination",
+      "Competition",
+      "Project Focus"
+    ],
+    "rows": [
+      [
+        "Daniel, BSc Computer Science (Year 3)",
+        "Washington DC, USA, for a two-week programme",
+        "Global AI Computing Competition with teams from universities worldwide",
+        "Applied AI system developed in his Research and Development Project"
+      ]
+    ]
+  },
+  "abstract": "Edge Hill student Daniel will represent his course in Washington DC after his third-year Research and Development Project was selected for a two-week global AI computing competition.",
+  "intro": "What started as a final-year challenge has quickly become an international opportunity. Daniel's <span class=\"highlighted-text\">Research and Development Project</span> has earned him a place in a <span class=\"highlighted-text\">global AI computing competition</span>, where he will spend two weeks in Washington DC presenting, testing, and refining his work alongside student teams from across the world.",
+  "sections": [
+    {
+      "reverse": false,
+      "image": {
+        "src": "images/historic2.png",
+        "alt": "Student developer preparing AI model outputs on a laptop"
+      },
+      "paragraphs": [
+        "Daniel's project builds an AI workflow that balances <span class=\"highlighted-text\">performance</span>, <span class=\"highlighted-text\">explainability</span>, and practical deployment — a combination judges said made it stand out. After a year of supervisor feedback, user testing, and benchmarking, it grew from a coursework submission into a serious piece of technical work with real-world applications in sectors where transparent AI decisions matter."
+      ]
+    },
+    {
+      "reverse": true,
+      "image": {
+        "src": "images/historic4.png",
+        "alt": "Delegates networking at an international computing event"
+      },
+      "paragraphs": [
+        "The Washington DC programme combines <span class=\"highlighted-text\">live judging rounds</span>, technical mentoring, and collaboration with finalists from across the world. Daniel will present his architecture, defend his design choices, and run live demonstrations. For students watching his progress, it is a clear message that <span class=\"highlighted-text\">ambitious project work</span> can open doors far beyond the classroom."
+      ]
+    }
+  ]
 }
