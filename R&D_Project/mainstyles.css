@@ -16,7 +16,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #1f2937;
-  background: #f4f6fb;
+  background: #f4f6f8;
 }
 
 a {
@@ -29,6 +29,47 @@ img {
   display: block;
   background: #dbe4f0;
   min-height: 150px;
+}
+
+/* AI Disclaimer styling */
+.ai-disclaimer-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image-carousel .ai-disclaimer-wrap {
+  flex: 0 0 100%;
+}
+
+.small-grid-item > .ai-disclaimer-wrap,
+.featured-story-image > .ai-disclaimer-wrap {
+  height: 100%;
+}
+
+.ai-disclaimer-label {
+  position: absolute;
+  left: 0.28rem;
+  bottom: 0.24rem;
+  font-size: 0.55rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(20, 26, 34, 0.58);
+  padding: 0.14rem 0.22rem;
+  border-radius: 0.2rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 780px) {
+  .ai-disclaimer-label {
+    font-size: 0.5rem;
+    left: 0.24rem;
+    bottom: 0.2rem;
+    padding: 0.12rem 0.2rem;
+  }
 }
 
 main {
@@ -90,12 +131,12 @@ main {
 
 /* Top Article Section styling*/
 .top-article {
-  background: #ffffff;
+  background: transparent;
   padding: 2rem;
   margin-bottom: 2rem;
-  border: 1px solid #e5e7eb;
+  min-height: calc(100svh - 70px);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.45fr 0.7fr;
   gap: 2rem;
   align-items: center;
 }
@@ -168,8 +209,9 @@ main {
 
 .news-brand-name {
   font-family: "Manrope", sans-serif;
-  font-size: clamp(2.3rem, 6vw, 4.1rem);
+  font-size: clamp(5.3rem, 6vw, 4.1rem);
   color: #000000;
+  font-weight: 800;
 }
 
 .intro-summary {
@@ -223,7 +265,6 @@ main {
 .featured-article-card {
   background: #f3f4f6;
   padding: 1.5rem;
-  border: 1px solid #d1d5db;
 }
 
 .article-kicker {
@@ -250,12 +291,17 @@ main {
   animation: articleHeroSlide 15s infinite;
 }
 
+.article-carousel-track > .ai-disclaimer-wrap {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
 .article-carousel-slide {
   width: 100%;
   min-width: 100%;
   flex-shrink: 0;
   object-fit: cover;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 13;
 }
 /* Article carousel keyframes */
 @keyframes articleHeroSlide {
@@ -313,6 +359,7 @@ main {
   font-size: 0.78rem;
 }
 
+/* Editor's Choice section styling */
 .editors-choice-summary,
 .poll-vote-form,
 .poll-status-message,
@@ -324,6 +371,67 @@ main {
 .editors-choice-title {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.6rem;
+}
+
+.editors-choice-feature-link {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  transition: all 200ms ease-in-out;
+}
+
+.editors-choice-image-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+}
+
+.editors-choice-image-wrap > .ai-disclaimer-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.editors-choice-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 200ms ease-in-out;
+}
+
+.editors-choice-title-overlay {
+  position: absolute;
+  right: 4.4rem;
+  bottom: 2rem;
+  width: min(42vw, 440px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(18px);
+  pointer-events: none;
+  transition: all 200ms ease-in-out;
+}
+
+.editors-choice-title {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: rgba(76, 29, 149, 0.82);
+  padding: 0.42em 0.6em 0.48em;
+  border-radius: 8px;
+}
+
+.editors-choice-feature-link:hover .editors-choice-image-wrap img,
+.editors-choice-feature-link:focus-within .editors-choice-image-wrap img {
+  transform: scale(1.55);
+}
+
+.editors-choice-feature-link:hover .editors-choice-title-overlay,
+.editors-choice-feature-link:focus-within .editors-choice-title-overlay {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .home-page h2 {
@@ -353,35 +461,96 @@ main {
 }
 
 .featured-article {
-  background: #e0ecff;
-  border: 1px solid #bfd4ff;
+  background: transparent;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
 .latest-articles,
 .highlighted-articles {
-  background: #fff7e8;
-  border: 1px solid #ffe3b3;
+  background: transparent;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
 .article-grid {
-  background: #e9f8ef;
-  border: 1px solid #bfe9cc;
+  background: transparent;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
+.editors-choice-section {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #dfe6ea;
+  padding: 1.25rem 0;
+}
+
+.editors-choice-header,
+.editors-choice-feature-link {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.editors-choice-section .editors-choice-header {
+  margin-bottom: 1rem;
+}
+
+.editors-choice-section .editors-choice-feature-link {
+  display: block;
+}
+
+.poll-section {
+  margin-top: 2.7rem;
+  padding: 2.2rem 1rem;
+  background: #e8edd8;
+  text-align: center;
+}
+
+.poll-section h2 {
+  margin-bottom: 0.9rem;
+}
+
+.poll-vote-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 1.6rem;
+}
+
+.poll-vote-form input {
+  margin-right: 0.35rem;
+}
+
+.poll-status-message {
+  margin-top: 0.95rem;
+}
+
+.poll-results-list {
+  width: min(760px, 92vw);
+  margin: 0.85rem auto 0;
+}
+
+/* Article card styling */
 .featured-article-card,
 .highlighted-articles article,
 .article-list article,
 .article-grid article,
 .featured-article article {
   background: #ffffff;
-  border: 1px solid #d6deea;
   padding: 0.9rem;
+  transition: transform 0.25s ease;
+}
+
+/* Hover effect for article cards */
+.featured-article-card:hover,
+.highlighted-articles article:hover,
+.article-list article:hover,
+.article-grid article:hover,
+.featured-article article:hover {
+  transform: translateY(-4px);
 }
 
 .article-list,
@@ -404,21 +573,24 @@ main {
 }
 
 /* Article page image sizing */
-.featured-article > a > article > img {
+.featured-article > a > article > img,
+.featured-article > a > article > .ai-disclaimer-wrap > img {
   width: 100%;
   min-height: 0;
   aspect-ratio: 16 / 7;
   object-fit: cover;
 }
 
-.highlighted-articles > article > img {
+.highlighted-articles > article > img,
+.highlighted-articles > article > .ai-disclaimer-wrap > img {
   width: 100%;
   min-height: 0;
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
-.article-grid > article > img {
+.article-grid > article > img,
+.article-grid > article > .ai-disclaimer-wrap > img {
   width: 100%;
   min-height: 0;
   aspect-ratio: 1 / 1;
@@ -565,6 +737,10 @@ main {
 }
 
 @media (max-width: 900px) {
+  .top-article {
+    grid-template-columns: 1fr;
+  }
+
   .article-list {
     grid-template-columns: 1fr 1fr;
   }

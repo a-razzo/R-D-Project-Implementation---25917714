@@ -21,7 +21,7 @@
   <main class="story-page">
     <article class="story-article">
       <section class="story-header">
-        <img id="article-hero-image" class="story-header-image" src="images/student-article-img-3.svg" alt="Event hero image">
+        <span class="ai-disclaimer-wrap">  <img id="article-hero-image" class="story-header-image" src="images/student-article-img-3.svg" alt="Event hero image">  <span class="ai-disclaimer-label">This Image is AI Generated</span></span>
         <div class="story-header-text">
           <p id="article-hero-kicker" class="story-date">Mon 20 Apr 2026 09.14 BST</p>
           <h1 id="event-hero-title">Article Content here...</h1>
@@ -48,14 +48,14 @@
       <h2 class="similar-article-title">See Similar Articles</h2>
       <a class="similar-article-link" href="students-article.html">
         <article>
-          <img src="images/student-article-img-2.svg" alt="Daniel reviewing his project notebooks before leaving for Washington DC">
+          <span class="ai-disclaimer-wrap">  <img src="images/student-article-img-2.svg" alt="Daniel reviewing his project notebooks before leaving for Washington DC">  <span class="ai-disclaimer-label">This Image is AI Generated</span></span>
           <h2>Edge Hill Student Takes on DC AI Final</h2>
           <p>Read how Daniel's R&D Project earned him a place in an international AI final.</p>
         </article>
       </a>
       <a class="similar-article-link" href="technology-article.html">
         <article>
-          <img src="images/technology-article-img-1.svg" alt="A game developer working in the Unity editor with a 3D scene open">
+          <span class="ai-disclaimer-wrap">  <img src="images/technology-article-img-1.svg" alt="A game developer working in the Unity editor with a 3D scene open">  <span class="ai-disclaimer-label">This Image is AI Generated</span></span>
           <h2>Unity 2026: Smarter, Sharper, Faster</h2>
           <p>Explore the latest Unity tools, smarter workflows, and performance improvements.</p>
         </article>
@@ -101,7 +101,7 @@
           ${data.sections.map((section) => `
             <div class="story-split ${section.reverse ? "reverse-order" : ""}">
               <figure class="story-inline-image">
-                <img src="${section.image.src}" alt="${section.image.alt}">
+                <span class="ai-disclaimer-wrap"><img src="${section.image.src}" alt="${section.image.alt}"><span class="ai-disclaimer-label">This Image is AI Generated</span></span>
               </figure>
               <div class="story-text-box">
                 ${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("")}
