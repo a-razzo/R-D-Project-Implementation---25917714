@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mainstyles.css">
   <title>EH NEWS Home</title>
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header-content">
+      <a class="site-logo" href="index.html">EH News</a>
+      <nav class="site-navigation">
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="technology.html">Technology</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <section class="top-story">
       <span class="background-wordmark">EH News</span>
@@ -14,13 +26,18 @@
           <span>Today on</span>
           <span class="news-brand-name">Edge Hill News</span>
         </h1>
-        <p class="intro-summary">Edge Hill News summary</p>
+        <p class="intro-summary">
+            Edge Hill News strives to keep technology students 
+            up to date with the latest stories on events, technology 
+            highlights, and feature articles on students in the department 
+            and what they have achieved.
+        </p>
       </div>
       <article class="featured-story-card">
         <h3 class="story-kicker">Today - Read me now!</h3>
         <a class="story-link" href="#">
           <div class="story-image-frame">
-            <img class="story-image" src="" alt="Featured story image placeholder">
+            <img class="story-image" src="images/tech-careers-1.svg" alt="Featured story image placeholder">
           </div>
         </a>
         <div class="story-details">
@@ -34,23 +51,22 @@
     <section class="latest-articles">
       <div class="section-header spaced">
         <h2>Place holder title</h2>
-        <a href="#">View Archive &#8250;</a>
       </div>
       <div class="article-list">
         <article class="article-preview">
-          <img src="" alt="Article image placeholder">
+          <img src="images/newspaper.svg" alt="Article image placeholder">
           <p class="article-topic">place holder title</p>
           <h3>place holder title</h3>
           <p>Article description placeholder</p>
         </article>
         <article class="article-preview">
-          <img src="" alt="Article image placeholder">
+          <img src="images/newspaper.svg" alt="Article image placeholder">
           <p class="article-topic">place holder title</p>
           <h3>place holder title</h3>
           <p>Article description placeholder</p>
         </article>
         <article class="article-preview">
-          <img src="" alt="Article image placeholder">
+          <img src="images/newspaper.svg" alt="Article image placeholder">
           <p class="article-topic">place holder title</p>
           <h3>place holder title</h3>
           <p>Article description placeholder</p>
@@ -58,5 +74,18 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-content">
+      <p>EH News - Student News at Edge Hill University</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="students.html">Students</a>
+        <a href="technology.html">Technology</a>
+      </nav>
+      <p>&copy; 2026 EH News. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
