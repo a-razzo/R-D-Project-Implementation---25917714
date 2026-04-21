@@ -3,7 +3,7 @@
   "hero": {
     "kicker": "Wed 22 Apr 2026 13.47 BST",
     "image": {
-      "src": "images/historic3.png",
+      "src": "images/student-article-img-2.svg",
       "alt": "Daniel reviewing his project notebooks before leaving for Washington DC"
     }
   },
@@ -30,7 +30,7 @@
     {
       "reverse": false,
       "image": {
-        "src": "images/historic2.png",
+        "src": "images/student-article-img-1.svg",
         "alt": "Student developer preparing AI model outputs on a laptop"
       },
       "paragraphs": [
@@ -40,7 +40,7 @@
     {
       "reverse": true,
       "image": {
-        "src": "images/historic4.png",
+        "src": "images/student-article-img-3.svg",
         "alt": "Delegates networking at an international computing event"
       },
       "paragraphs": [
