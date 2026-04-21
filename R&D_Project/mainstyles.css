@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cormorant Garamond", serif;
 }
 
 html {
@@ -14,6 +13,7 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   color: #1f2937;
   background: #f4f6fb;
@@ -58,7 +58,7 @@ main {
 .site-logo {
   font-family: "Manrope", sans-serif;
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 800;
 }
 
@@ -69,8 +69,9 @@ main {
 }
 
 .site-navigation a {
+  font-family: "Manrope", sans-serif;
   color: #dbeafe;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   padding: 0.35rem 0.5rem;
   border-radius: 6px;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -87,7 +88,157 @@ main {
   outline-offset: 2px;
 }
 
-.top-story,
+/* Top Article Section styling*/
+.top-article {
+  background: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.intro-copy {
+  margin-bottom: 0;
+}
+
+.intro-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 9vw, 6.2rem);
+  margin-bottom: 1rem;
+}
+
+.intro-heading span {
+  display: block;
+}
+
+.news-brand-name {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.3rem, 6vw, 4.1rem);
+  color: #000000;
+}
+
+.intro-summary {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.05rem;
+  color: #4b5563;
+  max-width: 60ch;
+}
+
+.featured-article-card {
+  background: #f3f4f6;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+}
+
+.article-kicker {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  color: #6b7280;
+}
+
+.article-link {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Article carousel */
+.article-image-frame {
+  width: 100%;
+  overflow: hidden;
+}
+
+.article-carousel-track {
+  width: 100%;
+  display: flex;
+  animation: articleHeroSlide 15s infinite;
+}
+
+.article-carousel-slide {
+  width: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+/* Article carousel keyframes */
+@keyframes articleHeroSlide {
+  0%, 28% {
+    transform: translateX(0);
+  }
+
+  33%, 61% {
+    transform: translateX(-100%);
+  }
+
+  66%, 94% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.article-details {
+  margin-top: 1rem;
+}
+
+.article-details h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+
+.article-details p {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
+  margin: 0.25rem 0;
+  color: #4b5563;
+}
+
+.article-status {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.62rem;
+  color: #8b5a3c;
+  margin-bottom: 0.5rem;
+}
+
+.article-genre-list h2,
+.editors-choice-header h2,
+.poll-section h2,
+.section-header h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.article-genre-links a {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.78rem;
+}
+
+.editors-choice-summary,
+.poll-vote-form,
+.poll-status-message,
+.poll-results-list {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.05rem;
+}
+
+.editors-choice-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+}
+
+.poll-vote-form label,
+.poll-vote-form button {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+}
+
 .featured-article {
   background: #e0ecff;
   border: 1px solid #bfd4ff;
@@ -110,7 +261,7 @@ main {
   margin-bottom: 1.25rem;
 }
 
-.featured-story-card,
+.featured-article-card,
 .highlighted-articles article,
 .article-list article,
 .article-grid article,
@@ -164,8 +315,9 @@ main {
 /* Similar Articles section styling */
 
 .similar-article-title {
+  font-family: "Cormorant Garamond", serif;
   grid-column: 1 / -1;
-  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
 }
 
 .similar-article-link {
@@ -184,27 +336,24 @@ main {
 }
 
 .similar-article-link h2 {
+  font-family: "Cormorant Garamond", serif;
   margin-top: 0.75rem;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 .similar-article-link p {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
   margin-top: 0.5rem;
 }
 
-.section-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.9rem;
-}
 
 .section-header h2 {
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
 }
 
-.story-details,
+.article-details,
 .featured-article article div {
   margin-top: 0.7rem;
 }
@@ -276,7 +425,6 @@ main {
   aspect-ratio: 16 / 10;
   object-fit: cover;
 }
-
 
 /* Footer styling */
 .site-footer {
