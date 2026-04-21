@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant Garamond:wght@400;500;600;700;800&display=swap');
 
 /* Global CSS Styling */
 * {
@@ -12,11 +12,15 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #1f2937;
   background: #f4f6f8;
+}
+
+h2{
+    font-weight: 300;
 }
 
 a {
@@ -27,7 +31,6 @@ a {
 img {
   width: 100%;
   display: block;
-  background: #dbe4f0;
   min-height: 150px;
 }
 
@@ -75,7 +78,8 @@ img {
 main {
   width: min(1120px, 92vw);
   margin: 0 auto;
-  padding: 1.5rem 0 2rem;
+  padding: 1.5rem 2rem;
+  background-color: white;
 }
 
 /* Navigation styling */
@@ -100,7 +104,7 @@ main {
   font-family: "Manrope", sans-serif;
   color: #ffffff;
   font-size: 1.7rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .site-navigation {
@@ -111,8 +115,9 @@ main {
 
 .site-navigation a {
   font-family: "Manrope", sans-serif;
-  color: #dbeafe;
-  font-size: 0.86rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
   padding: 0.35rem 0.5rem;
   border-radius: 6px;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -136,7 +141,7 @@ main {
   margin-bottom: 2rem;
   min-height: calc(100svh - 70px);
   display: grid;
-  grid-template-columns: 1.45fr 0.7fr;
+  grid-template-columns: 1.4fr 0.85fr;
   gap: 2rem;
   align-items: center;
 }
@@ -175,6 +180,7 @@ main {
   height: 100%;
 }
 
+/* Home page H1 animation styling */
 .home-page .intro-heading span::before {
   background: #f4f6fb;
   transform: translateX(0);
@@ -208,14 +214,14 @@ main {
 }
 
 .news-brand-name {
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(5.3rem, 6vw, 4.1rem);
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: clamp(6.3rem, 6vw, 4.1rem);
   color: #000000;
   font-weight: 800;
 }
 
 .intro-summary {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 1.05rem;
   color: #4b5563;
   max-width: 60ch;
@@ -223,6 +229,7 @@ main {
 
 /* Page Title styling + Animation (similar to H1 animation on the homepage) */
 .page-hero-title {
+  padding-left: 2.4rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-size: clamp(3rem, 9vw, 6.2rem);
@@ -263,20 +270,23 @@ main {
 }
 
 .featured-article-card {
-  background: #f3f4f6;
-  padding: 1.5rem;
+  border: 1px solid #d7dde2;
+  background: #ffffff;
+  padding: 0;
 }
 
 .article-kicker {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 1.6rem;
-  margin: 0 0 1rem;
+  margin: 0;
+  padding: 0.9rem 1rem 0.7rem;
   color: #6b7280;
+  text-align: center;
 }
 
 .article-link {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 /* Article carousel */
@@ -301,7 +311,7 @@ main {
   min-width: 100%;
   flex-shrink: 0;
   object-fit: cover;
-  aspect-ratio: 16 / 13;
+  aspect-ratio: 4 / 4.3;
 }
 /* Article carousel keyframes */
 @keyframes articleHeroSlide {
@@ -323,7 +333,8 @@ main {
 }
 
 .article-details {
-  margin-top: 1rem;
+  margin-top: 0;
+  padding: 0.85rem 1rem 1rem;
 }
 
 .article-details h2 {
@@ -333,14 +344,14 @@ main {
 }
 
 .article-details p {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 0.72rem;
   margin: 0.25rem 0;
   color: #4b5563;
 }
 
 .article-status {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 0.62rem;
   color: #8b5a3c;
   margin-bottom: 0.5rem;
@@ -354,9 +365,38 @@ main {
   font-size: clamp(2rem, 5vw, 3.2rem);
 }
 
+.article-genre-list {
+  background: transparent;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .article-genre-links a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1f2937;
+  border: 1px solid #d7dde2;
+  background: #ffffff;
+  box-shadow: 0 18px 30px rgba(20, 26, 34, 0.06);
+  padding: 0.7rem 1rem 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.article-genre-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.article-genre-links a:hover,
+.article-genre-links a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(20, 26, 34, 0.12);
+  color: #4c1d95;
+  border-color: #b9a8e6;
 }
 
 /* Editor's Choice section styling */
@@ -364,7 +404,7 @@ main {
 .poll-vote-form,
 .poll-status-message,
 .poll-results-list {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 1.05rem;
 }
 
@@ -373,10 +413,16 @@ main {
   font-size: 1.6rem;
 }
 
+.editors-choice-header {
+  width: min(1120px, 92vw);
+  margin: 0 auto 1rem;
+}
+
 .editors-choice-feature-link {
   position: relative;
-  display: flex;
-  align-items: stretch;
+  display: block;
+  width: min(1120px, 92vw);
+  margin: 0 auto;
   transition: all 200ms ease-in-out;
 }
 
@@ -456,10 +502,11 @@ main {
 
 .poll-vote-form label,
 .poll-vote-form button {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 1rem;
 }
 
+.article-genre-list,
 .featured-article {
   background: transparent;
   padding: 1.25rem;
@@ -467,12 +514,7 @@ main {
 }
 
 .latest-articles,
-.highlighted-articles {
-  background: transparent;
-  padding: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
+.highlighted-articles,
 .article-grid {
   background: transparent;
   padding: 1.25rem;
@@ -485,20 +527,6 @@ main {
   transform: translateX(-50%);
   background: #dfe6ea;
   padding: 1.25rem 0;
-}
-
-.editors-choice-header,
-.editors-choice-feature-link {
-  width: min(1120px, 92vw);
-  margin: 0 auto;
-}
-
-.editors-choice-section .editors-choice-header {
-  margin-bottom: 1rem;
-}
-
-.editors-choice-section .editors-choice-feature-link {
-  display: block;
 }
 
 .poll-section {
@@ -534,7 +562,6 @@ main {
 }
 
 /* Article card styling */
-.featured-article-card,
 .highlighted-articles article,
 .article-list article,
 .article-grid article,
@@ -545,7 +572,6 @@ main {
 }
 
 /* Hover effect for article cards */
-.featured-article-card:hover,
 .highlighted-articles article:hover,
 .article-list article:hover,
 .article-grid article:hover,
@@ -560,6 +586,10 @@ main {
   gap: 1rem;
 }
 
+.article-grid img{
+    filter: invert(50%);
+}
+
 .article-list {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -570,6 +600,57 @@ main {
 
 .article-grid {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.events-page .highlighted-articles {
+  gap: 1.3rem;
+}
+
+.events-page .highlighted-articles article {
+  padding: 0 0 1rem;
+}
+
+.events-page .highlighted-articles h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.95;
+  margin: 0.8rem 0.95rem 0.35rem;
+}
+
+.events-page .highlighted-articles p {
+  margin: 0 0.95rem;
+  font-size: 0.9rem;
+}
+
+.events-page .article-grid article {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  aspect-ratio: 1 / 1;
+}
+
+.events-page .article-grid > article > .ai-disclaimer-wrap {
+  height: 100%;
+}
+
+.events-page .article-grid > article > img,
+.events-page .article-grid > article > .ai-disclaimer-wrap > img {
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.events-page .article-grid h3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 3.5rem 0.7rem 3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: linear-gradient(to top, rgba(20, 26, 34, 0.92) 55%, rgba(20, 26, 34, 0.55) 82%, rgba(20, 26, 34, 0));
 }
 
 /* Article page image sizing */
@@ -627,20 +708,62 @@ main {
 }
 
 .similar-article-link p {
-  font-family: "Manrope", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
   font-size: 0.72rem;
   margin-top: 0.5rem;
 }
 
-
-.section-header h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.8rem;
-}
-
-.article-details,
 .featured-article article div {
   margin-top: 0.7rem;
+}
+
+/* Article page content spacing */
+.story-header {
+  margin-bottom: 1.6rem;
+}
+
+.story-header-text h1 {
+  padding-top: 0.35rem;
+  padding-bottom: 0.6rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.summary-heading {
+  padding-top: 0.4rem;
+  padding-bottom: 0.45rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.summary-table-wrap {
+  padding-top: 0.35rem;
+  padding-bottom: 1.25rem;
+}
+
+.story-summary {
+  padding-top: 0.65rem;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.story-content {
+  margin-top: 3.2rem;
+  padding-top: 1.2rem;
+}
+
+.story-section-title {
+  padding-bottom: 0.8rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.story-intro {
+  padding-top: 0.3rem;
+  padding-bottom: 1.4rem;
+  font-size: 1.18rem;
 }
 
 /* Article page image sizing */
@@ -653,7 +776,7 @@ main {
 }
 
 .story-inline-image {
-  width: 100%;
+  width: 90%;
 }
 
 .story-inline-image img {
@@ -670,6 +793,7 @@ main {
   grid-template-areas: "image text";
   gap: 2rem;
   align-items: center;
+  justify-items: center;
   margin-bottom: 2rem;
 }
 
@@ -681,8 +805,82 @@ main {
   grid-area: text;
 }
 
+.story-text-box {
+  width: 90%;
+  background: #f8fafc;
+  border: 1px solid #d7dde2;
+  padding: 1.3rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-text-box p {
+  padding-bottom: 0.95rem;
+  font-size: 1.1rem;
+}
+
+.story-text-box p:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .story-split.reverse-order {
   grid-template-areas: "text image";
+}
+/* Article page highlighted text styling + animation */
+.highlighted-text {
+  font-weight: 700;
+}
+
+@keyframes event-highlight-sweep {
+  to {
+    background-position: 0;
+  }
+}
+
+.story-body .highlighted-text {
+  color: #1f2937;
+  border-radius: 0.14rem;
+  padding-inline: 0.14rem;
+  background: linear-gradient(
+    to right,
+    rgba(250, 204, 21, 0.7) 50%,
+    rgba(250, 204, 21, 0) 50%
+  );
+  background-position: 100%;
+  background-size: 200% 100%;
+}
+
+@supports (animation-timeline: view(60% 20%)) {
+  .story-body .highlighted-text {
+    animation: event-highlight-sweep linear forwards;
+    animation-timeline: view(60% 20%);
+  }
+}
+/* Article paragraph animation */
+.story-body p:not(.story-summary):not(.story-intro) {
+  animation: event-text-appear ease-in both;
+  animation-timeline: view();
+  animation-range: 0vh 42vh;
+}
+
+@keyframes event-text-appear {
+  from {
+    opacity: 0;
+    translate: 0 8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-body .highlighted-text {
+    animation: none;
+    background-position: 0;
+  }
+
+  .story-body p:not(.story-summary):not(.story-intro) {
+    animation: none;
+  }
 }
 
 /* Article Table styling */
