@@ -78,7 +78,12 @@
     </section>
 
     <!-- Weekly poll interaction section -->
+    <h2>Weekly Poll</h2>
     <section class="poll-section">
+      <span class="poll-online-indicator" id="pollOnlineIndicator">
+        <span class="poll-online-dot"></span>
+        <span class="poll-online-label" id="pollOnlineLabel">Checking connection...</span>
+      </span>
       <h2>Do you prefer Java or JavaScript?</h2>
       <form class="poll-vote-form" id="weeklyPollForm">
         <label><input type="radio" name="poll" value="java" required> Java</label>
@@ -135,7 +140,7 @@
     </div>
   </footer>
 
-  
+  <script src="js/poll.js"></script>
 
 </body>
 </html>
